@@ -1,17 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { addSentence, lastWordUpdate } from '../actions/editor'
+import { addSentence } from '../actions/editor'
 import { connect } from 'react-redux';
 import Sentence from './Sentence';
 
-const RhymeGroup = ({ rhymeGroup: { id, sentences, index } }) => {
-    const onClick = () => {
-        addSentence(id);
-    }
+
+const RhymeGroup = ({ rhymeGroup: { id, sentences, index }, addSentence }) => {
+
     return (
         <div>
-            <h2 onClick={e => onClick()}>Rhyme Group {index}</h2>
-            {sentences.forEach(sentence => (
+            <h2 onClick={e => addSentence(id)}>Rhyme Group {index}</h2>
+            {sentences.map(sentence => (
                 <Sentence sentence={{ parentId: id, id: sentence.id, groupSize: sentences.length }} />
             ))}
         </div>
@@ -20,6 +19,7 @@ const RhymeGroup = ({ rhymeGroup: { id, sentences, index } }) => {
 
 RhymeGroup.propTypes = {
     rhymeGroup: PropTypes.object.isRequired,
+    addSentence: PropTypes.func.isRequired,
 }
 
-export default connect(null, { addSentence, lastWordUpdate })(RhymeGroup);
+export default connect(null, { addSentence })(RhymeGroup);

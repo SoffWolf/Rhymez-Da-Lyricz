@@ -7,7 +7,7 @@
 
 # testing
 /coverage
-
+/src/util/config/.env
 # production
 /build
 
