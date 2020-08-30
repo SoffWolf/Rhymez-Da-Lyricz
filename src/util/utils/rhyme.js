@@ -67,10 +67,8 @@ const number_of_rhymes = async (word1, word2) => {
       }
     }
     return { word1, word2, match: rhymes_count };
-  } catch {
-    (err) => {
-      console.error(err);
-    };
+  } catch (err) {
+    console.error(err);
   }
 };
 
@@ -129,4 +127,4 @@ const getRhymeSuggestion = async (word1, word2) => {
 //   .catch((err) => console.log(err));
 // console.log(number_of_rhymes(getPhonetic('nation'), getPhonetic('television')));
 
-module.exports = { getRhymeSuggestion };
+export default getRhymeSuggestion;

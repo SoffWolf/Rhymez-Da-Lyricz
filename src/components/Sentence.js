@@ -3,11 +3,7 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux';
 import { removeSentence, removeRhymeGroup, updateSentence } from '../actions/editor'
 
-// const formatLyric = (lyric) => {
-//     const text = lyric.split(' ');
-//     const last = text.pop();
-//     return { html: text.join(' ') + (text.length > 0 ? <span className="last">{last}</span> : last), lastword: last };
-// };
+
 
 const Sentence = ({ sentence: { id, parentId, groupSize }, removeSentence, removeRhymeGroup, updateSentence }) => {
     const onChange = e => {

@@ -3,3 +3,14 @@ body {
     background-color: #cccccc;
     background-size: cover;
 }
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(fontsfree-net-lulo-clean-w01-one-bold-webfont);
+}
+
+.title-bar {
+    font-family: myFirstFont;
+    text-align: center;
+    padding
+}

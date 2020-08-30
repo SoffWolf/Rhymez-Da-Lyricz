@@ -7,10 +7,6 @@ import {
 } from "./types";
 import { v4 as uuidv4 } from 'uuid';
 
-// export const addRhymeGroup = () => () => {
-//     console.log("ad ryme")
-// }
-
 export const addRhymeGroup = () => dispatch => {
     const rhymeGroupId = uuidv4();
     const sentenceId1 = uuidv4();

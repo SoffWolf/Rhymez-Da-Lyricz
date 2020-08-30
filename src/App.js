@@ -8,17 +8,25 @@ import Alert from './components/Alert';
 //Redux
 import { Provider } from 'react-redux';
 import store from './store';
+import Container from 'react-bootstrap/Container';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
 const App = () => {
   return (
     <Provider store={store}>
-      <div>
-        <Alert />
-        {/* <Nav /> */}
-        <Editor className="col-8" />
-        <RhymeList className="col-4" />
-        {/* <Footer /> */}
-      </div>
+      <Nav />
+      <Container>
+        <Row>
+          <Col sm={8}>
+            <Editor />
+          </Col>
+          <Col sm={4}>
+            <RhymeList />
+          </Col>
+        </Row>
+      </Container>
+      {/* <Footer /> */}
     </Provider>
   );
 }

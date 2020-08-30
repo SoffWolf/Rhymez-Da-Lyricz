@@ -1,23 +1,30 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-import DropdownButton from 'react-bootstrap/Dropdown';
-import Dropdown from 'react-bootstrap/Dropdown';
+import Form from 'react-bootstrap/Form';
 
 const RhymeList = ({ rhymeList }) => {
     return (
         <div>
-            <h1>Rhyme List</h1>
+            <h1 >Rhyme List</h1>
             <ul>
                 {
                     rhymeList.map((rhyme) => (
                         <li>
-                            <DropdownButton id="dropdown-basic-button" title={rhyme.word1}>
+                            <Form.Group>
+                                <Form.Control as="select">
+                                    <option>{rhyme.word1}</option>
+                                </Form.Control>
                                 {rhyme.wordList.map(
-                                    word => (<Dropdown.Item value={word}> {word}</Dropdown.Item>)
+                                    word => (
+                                        <Form.Control as="select">
+                                            <option>{word}</option>
+                                        </Form.Control>
+                                    )
                                 )}
-                            </DropdownButton>
-                        </li>))
+                            </Form.Group>
+                        </li>)
+                    )
                 }
             </ul>
         </div >

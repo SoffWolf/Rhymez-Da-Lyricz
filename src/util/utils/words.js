@@ -17,7 +17,6 @@ const getPhonetic = async (word) => {
     );
     return res.data.pronunciation.all;
   } catch (error) {
-    // console.error(error);
     return '';
   }
 };

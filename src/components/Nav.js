@@ -2,8 +2,8 @@ import React from 'react'
 
 const Nav = () => {
     return (
-        <div className="Title Bar">
-            Welcome To Rhyme Da Lyricz
+        <div className="title-bar">
+            <h1>RHYMEZ DA LYRICZ</h1>
         </div>
     )
 }
