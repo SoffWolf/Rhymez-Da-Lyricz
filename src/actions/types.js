@@ -1,0 +1,14 @@
+export const RHYME_UPDATE = 'RHYME_UPDATE';
+
+export const ADD_RHYME_GROUP = 'ADD_RHYME_GROUP';
+export const REMOVE_RHYME_GROUP = 'REMOVE_RHYME_GROUP';
+
+export const ADD_SENTENCE = 'ADD_SENTENCE';
+export const REMOVE_SENTENCE = 'REMOVE_SENTENCE';
+
+export const LAST_WORD_UPDATE = 'LAST_WORD_UPDATE';
+
+export const SET_ALERT = 'SET_ALERT';
+export const REMOVE_ALERT = 'REMOVE_ALERT';
+
+export const SENTENCE_UPDATE = 'SENTENCE_UPDATE';
