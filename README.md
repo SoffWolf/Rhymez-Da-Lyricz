@@ -1,3 +1,10 @@
+A React website that takes a normal passage as the input and output rap lyrics that have the same meaning with the input. The output will be full of rhymes, like an actual rap lyrics. Now you can be a lyrical rapper without being a linguist. 
+
+Link to the demo video: https://www.youtube.com/watch?v=TmFIKOKwYIE
+
+Link to the mock design by Nguyen Tung Chi: https://sakurakurochi.wixsite.com/rhymez-da-lyricz
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
